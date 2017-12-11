@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>セッションのサンプル</title>
+</head>
+<body>
+<h2>セッションに属性を保存</h2>
+<form action="SessionCreateServlet" method="post">
+<table>
+<tr>
+<td>会員名</td>
+<td><input type="text" name="membername" size="10" value=""></td>
+</tr>
+<tr>
+<td>会員入会日</td>
+<td><input type="text" name="memberdate" size="10" value=""></td>
+</tr>
+</table>
+<input type="submit" value="送信">
+</form>
+<h2>セッションから属性を取得</h2>
+<a href="SessionGetServlet">属性の取得</a>
+<h2>セッションの無効化</h2>
+<a href="SessionRemoveServlet">セッションの無効化</a>
+</body>
+</html>
